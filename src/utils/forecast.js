@@ -15,13 +15,15 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
+
         "The weather today is " +
           body.current.weather_descriptions +
           ". it is " +
           body.current.temperature +
           " degreess out. it's feels like " +
           body.current.feelslike +
-          " degreess."
+          " degreess. wind speed is " +
+          body.current.wind_speed
       );
     }
   });

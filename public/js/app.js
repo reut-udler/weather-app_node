@@ -15,8 +15,7 @@ weatherForm.addEventListener("submit", (e) => {
       } else {
         document.querySelector("#message1").textContent =
           "Location: " + data.location;
-        document.querySelector("#message2").textContent =
-          "Today's weather: " + data.forecast;
+        document.querySelector("#message2").textContent = data.forecast;
       }
     });
   });
