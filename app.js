@@ -81,6 +81,8 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server working");
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+  console.log("Server working on port " + port);
 });
